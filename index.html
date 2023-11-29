@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Boostrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="Bootstrap" />
           </a>
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,13 +24,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#Shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#Backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subcribe</a>
+                <a class="nav-link" href="#Subcribe">Subcribe</a>
               </li>
             </ul>
           </div>
@@ -47,25 +41,13 @@
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+              type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"  aria-current="true" aria-label="Slide 1">
+            </button>
             <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
+              type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+            </button>
             <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active border rounded bg-info p-5">
@@ -119,23 +101,14 @@
                 </div>
               </div>
             </div>
-
           </div>
           <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
+            class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
+            class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -171,7 +144,7 @@
       </section>
       <!-- catagories eng -->
       <!-- shoes section start -->
-      <section class="container my-5">
+      <section class="container my-5" id="Shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -218,7 +191,7 @@
       <!-- shoes section end -->
 
       <!-- begs section start -->
-      <section class="container my-5">
+      <section class="container my-5" id="Backpack">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -263,7 +236,24 @@
         </div>
       </section>
       <!-- begs section end -->
+
+      <!-- Subcribe start -->
+      <section style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="Subcribe">
+      <div >
+        <h2> LET'S STAY IN TOUCH</h2>
+        <P>get update on sales, special and more</P>
+          <form>
+            <div class="mb-1">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+      </div>
+      </section>
+      <!-- Subcribe end -->
     </main>
+    <footer class="mt-5 text-center">
+      <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quas!</small></p>
+    </footer>
     <script src="Boostrap/bootstrap.min.js"></script>
   </body>
 </html>
